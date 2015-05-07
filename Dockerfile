@@ -1,5 +1,6 @@
 FROM        debian:8.0
 MAINTAINER  andystanton
+ENV         LANG C.UTF-8
 ENV         D_VERSION 2.067.0
 RUN         apt-get update -qq -y && \
             apt-get install -y patch wget libc6-dev gcc xdg-utils libcurl3 && \
